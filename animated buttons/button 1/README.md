@@ -4,9 +4,9 @@ Bienvenido al proyecto de Animación de Botones. En este proyecto, hemos creado 
 
 ## Capturas de Pantalla
 
-![Captura de Pantalla 1](./captures/capture_1.png)
-![Captura de Pantalla 2](./captures/capture_2.png)
-![Captura de Pantalla 3](./captures/Screenshot_1.png)
+![Captura de Pantalla 1](./captures/capture_1.png | height: 150px)
+![Captura de Pantalla 2](./captures/capture_2.png | height: 150px)
+![Captura de Pantalla 3](./captures/Screenshot_1.png height: 150px)
 
 ## Características
 
