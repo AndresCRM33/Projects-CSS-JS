@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    gap: 20px;
+}
+
+.btn{
+    /* background-color: #fff; */
+    position: relative;
+    width: 150px;
+    height: 60px;
+    text-decoration: none;
+    color: #f0f0f0;
+    transition: all 0.3s;
+}
+
+.btn:hover{
+    transform: translateY(-10px);
+}
+
+.btn:active{
+    transform: none;
+}
+
+.btn .lines{
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.btn .lines::before{
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    background: linear-gradient(transparent, var(--clr), var(--clr), transparent);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: animate 5s linear infinite;
+}
+
+.btn .lines::after{
+    content: "";
+    position: absolute;
+    background-color: #1b1b1b;
+    inset: 2px;
+}
+
+.btn .lines span{
+    z-index: 1;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    font-size: 20px;
+    text-shadow: 0px 0px 3px #f0f0f0;
+}
+
+.btn:hover .lines{
+    box-shadow: 0px 10px 2px #000;
+}
+
+.btn:active .lines{
+    box-shadow: none;
+}
+
+.btn:hover .lines span{
+    font-size: 25px;
+    text-shadow: 0px 0px 5px var(--clr), 0px 0px 15px var(--clr);
+    font-weight: bold;
+}
+
+@keyframes animate{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
