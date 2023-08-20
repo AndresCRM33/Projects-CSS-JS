@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(rgb(219, 219, 0), orange, rgb(94, 1, 94));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 20px;
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+nav h3{
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    font-size: 40px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    transition: all .3s;
+}
+
+nav ul li a:hover{
+    background-color: rgb(82, 82, 82);
+}
+
+nav ul li a:active{
+    background-color: gray;
+}
+
+form{
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.562);
+    padding: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.37);
+    position: relative;
+    animation-name: animation-container;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
+.container-effect{
+    background-color: rgb(255, 208, 0);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border-radius: 100%;
+    box-shadow: 0 0 20px rgb(255, 208, 0), 0 0 20px rgb(255, 208, 0), 0 0 20px rgb(255, 208, 0), 
+                0 0 20px rgb(255, 208, 0), 0 0 20px rgb(255, 208, 0), 0 0 35px rgb(255, 208, 0),
+                0 0 35px rgb(255, 208, 0), 0 0 25px rgb(255, 208, 0), 0 0 50px rgb(255, 208, 0),
+                0 0 90px rgb(255, 208, 0);
+    top: 15px;
+    right: -50px;
+    animation-name: effect-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    
+}
+
+.container-effect2{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 100%;
+    box-shadow: 0 0 20px white, 0 0 20px white, 0 0 20px white, 
+                0 0 20px white, 0 0 20px white, 0 0 40px white,
+                0 0 45px white, 0 0 70px white;
+    top: 230px;
+    left: -50px;
+    animation-name: effect-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.container-effect3{
+    background-color: rgb(137, 6, 189);
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border-radius: 100%;
+    box-shadow: 0 0 20px rgb(137, 6, 189), 0 0 20px rgb(137, 6, 189), 0 0 20px rgb(137, 6, 189), 
+                0 0 20px rgb(137, 6, 189), 0 0 20px rgb(137, 6, 189), 0 0 30px rgb(137, 6, 189),
+                0 0 30px rgb(137, 6, 189), 0 0 30px rgb(137, 6, 189),
+                0 0 60px rgb(137, 6, 189);
+    top: 300px;
+    right: -50px;
+    animation-name: effect-animation;
+    animation-duration: 3.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
+.container-effect4{
+    background-color: orange;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border-radius: 100%;
+    box-shadow: 0 0 20px orange, 0 0 20px orange, 
+                0 0 50px orange, 0 0 20px orange, 
+                0 0 20px orange, 0 0 70px orange,
+                0 0 50px orange, 0 0 100px orange;
+    top: -10px;
+    left: 30px;
+    animation-name: effect-animation;
+    animation-duration: 3.1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
+.container-effect5{
+    background-color: rgb(166, 255, 0);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 100%;
+    box-shadow: 0 0 20px rgb(166, 255, 0), 0 0 20px rgb(166, 255, 0), 
+                0 0 50px rgb(166, 255, 0), 0 0 20px rgb(166, 255, 0), 
+                0 0 20px rgb(166, 255, 0), 0 0 70px rgb(166, 255, 0),
+                0 0 50px rgb(166, 255, 0), 0 0 100px rgb(166, 255, 0);
+    top: 400px;
+    left: 100px;
+    animation-name: effect-animation;
+    animation-duration: 1.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
+.span{
+    padding: 20px;
+    font-size: 30px;
+}
+
+.datos{
+    width: 100%;
+    position: relative;
+    max-width: 300px;
+}
+
+.datos input{
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.datos .lbl-nombre{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.txt-nombre{
+    position: absolute;
+    bottom: 2px;
+    left: 5px;
+    transition: all 0.3s ease;
+    color: rgb(0, 0, 0);
+    pointer-events: none;
+    font-size: 20px;
+}
+
+.datos input:focus + .lbl-nombre .txt-nombre, .datos input:valid + .lbl-nombre .txt-nombre{
+    transform: translateY(-25px);
+    font-size: 15px;
+    color: red;
+}
+
+.datos input:focus{
+    border-bottom: 2px solid red;
+}
+
+#boton{
+    font-size: 15px;
+    margin-top: 20px;
+    width: 70px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    
+    transition: all 0.3s;
+    border-radius: 15px;
+}
+
+#boton:hover{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.733);
+    background-color: rgba(242, 224, 255, 0.26);
+    animation-name: effect-button;
+    animation-duration: .1s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+
+#boton:active{
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.322),
+                inset -1px -1px 5px rgba(255, 255, 255, 0.76);
+}
+
+
+.links{
+    margin-top: 20px;
+}
+
+
+.links a{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.links a:hover{
+    color: purple;
+}
+
+
+@keyframes effect-animation {
+    0%{
+        transform: translateY(0);
+    }
+
+    100%{
+        transform: translateY(50%);
+    }
+}
+
+@keyframes effect-button{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(3px);
+    }
+    100%{
+        transform: translateX(-3px);
+    }
+}
+
+@keyframes animation-container{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-8px);
+    }
+}
