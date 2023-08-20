@@ -1,6 +1,6 @@
 # Proyecto: Animación de Botones
 
-Bienvenido al proyecto de Animación de Botones. En este proyecto, hemos creado una serie de botones interactivos con animaciones utilizando HTML, CSS y JavaScript.
+Bienvenido al proyecto de Animación de Botones. En este proyecto, hemos creado una serie de botones interactivos con animaciones utilizando HTML, CSS.
 
 ## Capturas de Pantalla
 
@@ -11,7 +11,7 @@ Bienvenido al proyecto de Animación de Botones. En este proyecto, hemos creado 
 
 - Botones llamativos con efectos de animación sutiles pero atractivos.
 - Interacción fluida y sensible a eventos.
-- Implementado con tecnologías web estándar: HTML, CSS y JavaScript.
+- Implementado con tecnologías web estándar: HTML, CSS.
 
 ## Cómo Ver
 
